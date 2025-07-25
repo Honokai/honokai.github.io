@@ -1,0 +1,57 @@
+.taskbar {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  align-items: center;
+}
+
+.taskbar > div:first-child {
+  margin-left: 1rem;
+}
+
+.taskbar > div:last-child {
+  margin-right: 1rem;
+}
+
+.taskbar button {
+  border: none;
+  padding: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  background-color: transparent;
+}
+
+.calendar-button {
+  font-weight: 600;
+}
+
+.taskbar button:hover {
+  background-color: rgb(27, 27, 27);
+}
+
+.btn-icon {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+
+.btn-icon path {
+  fill: white;
+}
+
+.btn-icon:hover {
+  background-color: rgb(27, 27, 27);
+}
+
+.system-actions {
+  display: grid;
+  grid-template-columns: 3;
+  grid-auto-flow: column;
+}

@@ -1,0 +1,7 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: url("https://ubuntucommunity.s3.us-east-2.amazonaws.com/original/3X/d/5/d5ad7d37bcaf71976ffbc85b4db7f4cf6c42b522.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
