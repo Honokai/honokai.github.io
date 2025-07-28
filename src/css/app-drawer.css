@@ -1,5 +1,19 @@
+@keyframes colorChange {
+  0% {
+    background-color: #00000000;
+  }
+  100% {
+    background-color: rgb(49, 49, 49);
+  }
+}
+
 .backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  background-color: transparent;
+  animation: colorChange 1s ease-in-out forwards;
+  z-index: 1;
 }

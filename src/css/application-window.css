@@ -1,0 +1,84 @@
+.window {
+  background-color: black;
+  position: absolute;
+  top: 10rem;
+  left: 10rem;
+  width: 50rem;
+  border-radius: 1rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.window-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
+
+.window-content {
+  display: flex;
+  padding: 0.5rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
+
+.window-header div {
+  display: flex;
+  gap: 5px;
+}
+
+.window-header div button {
+  border: none;
+  background: rgb(56, 56, 56);
+  border-radius: 50%;
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.window-header button:hover {
+  filter: brightness(75%);
+}
+
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+}
+
+.frame {
+  width: 100%;
+}
+
+.frame section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.frame section div {
+  display: flex;
+}
+
+section ul {
+  list-style: none;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.frame div section {
+  display: flex;
+}
