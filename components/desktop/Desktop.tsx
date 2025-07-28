@@ -1,6 +1,5 @@
 import TaskBar from "../top-bar/TaskBar";
 import AppDrawer from "../app-drawer/AppDrawer";
-import ApplicationWindow from "../application/ApplicationWindow";
 import Bootup from "./Bootup";
 import "../../src/css/desktop.css";
 import WindowManager from "./WindowManager";
