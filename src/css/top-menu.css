@@ -32,6 +32,9 @@
   border-radius: 1rem;
 }
 
+.calendar-button > span {
+  margin-left: 0.2rem;
+}
 .taskbar button:hover {
   background-color: rgb(27, 27, 27);
 }

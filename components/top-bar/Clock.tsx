@@ -1,8 +1,7 @@
-import { DateTime } from "luxon";
-import { useRef } from "react";
+import { useTime } from "../../hooks/useTime";
 
 export default function Clock() {
-  const ref = useRef<HTMLSpanElement>(null);
-  
-  return <span ref={ref}></span>;
+  const { time } = useTime();
+
+  return <span>{time.toFormat("HH:mm")}</span>;
 }

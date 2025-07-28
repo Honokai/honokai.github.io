@@ -1,9 +1,14 @@
 import { AppDrawerProvider } from "../hooks/useAppDrawer";
+import { TimeClockProvider } from "../hooks/useTime";
 
 export default function AppProvider({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <AppDrawerProvider>{children}</AppDrawerProvider>;
+  return (
+    <TimeClockProvider>
+      <AppDrawerProvider>{children}</AppDrawerProvider>
+    </TimeClockProvider>
+  );
 }

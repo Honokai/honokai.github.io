@@ -3,6 +3,7 @@ import LeftArrow from "../../src/assets/chevron-left.svg?react";
 import RightArrow from "../../src/assets/chevron-right.svg?react";
 import NotificationIcon from "../../src/assets/preferences-system-notifications-symbolic.svg?react";
 import { useCallback, useState } from "react";
+import Clock from "./Clock";
 
 const weekDays = [
   "sunday",
@@ -25,8 +26,8 @@ export default function CalendarClock() {
   return (
     <div className="datetime-area">
       <button className="calendar-button" onClick={handleCalendarOpenStatus}>
-        {`${currentDate.monthShort} ${currentDate.day}`}{" "}
-        <span>{currentDate.toFormat("HH:mm")}</span>
+        {`${currentDate.monthShort} ${currentDate.day}`}
+        <Clock />
       </button>
       {calendarOpen && (
         <div className="notification-calendar">
