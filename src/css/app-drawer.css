@@ -3,17 +3,73 @@
     background-color: #00000000;
   }
   100% {
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(34, 34, 38);
   }
 }
 
 .backdrop {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: transparent;
-  animation: colorChange 1s ease-in-out forwards;
+  animation: colorChange 500 ease-in-out forwards;
   z-index: 1;
+  gap: 1.5rem;
+}
+
+.backdrop > div:not(:nth-child(2)) {
+  display: flex;
+  justify-content: center;
+}
+
+.backdrop > div:nth-child(2) {
+  flex: 1;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.backdrop > div:nth-child(2) > div {
+  background: url("https://ubuntucommunity.s3.us-east-2.amazonaws.com/original/3X/d/5/d5ad7d37bcaf71976ffbc85b4db7f4cf6c42b522.jpeg");
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+}
+
+span.input-search {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 0.2rem;
+  padding: 0.3rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  background: rgb(67, 69, 77);
+  border-radius: 1rem;
+  width: 20rem;
+  border: transparent solid 2px;
+  align-items: center;
+}
+
+.input-search:has(input:focus) {
+  border: rgb(119, 159, 206) solid 2px;
+}
+
+.input-search path {
+  fill: white;
+}
+
+span.input-search svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+span.input-search > input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
 }
