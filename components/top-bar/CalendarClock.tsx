@@ -48,7 +48,7 @@ export default function CalendarClock() {
 function Notification(): React.ReactNode {
   return (
     <section className="notification">
-      <NotificationIcon fill="white" />
+      <NotificationIcon />
       <p>No Notifications</p>
     </section>
   );

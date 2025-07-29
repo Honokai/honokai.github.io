@@ -1,13 +1,7 @@
 import "../../src/css/settings.css";
-import ReactIcon from "../../src/assets/react.svg?react";
-import SpringBootIcon from "../../src/assets/springboot.svg?react";
-import DotNetIcon from "../../src/assets/dot-net.svg?react";
-import LaravelIcon from "../../src/assets/laravel.svg?react";
-import MySqlIcon from "../../src/assets/mysql.svg?react";
-import OracleIcon from "../../src/assets/oracle.svg?react";
-import MongoIcon from "../../src/assets/mongodb.svg?react";
 import SearchIcon from "../../src/assets/search.svg?react";
 import MenuIcon from "../../src/assets/open-menu-symbolic.svg?react";
+import { techStackList } from "../../utils/techStack";
 
 export default function Settings() {
   return (
@@ -29,7 +23,7 @@ export default function Settings() {
       </section>
       <section className="main-content">
         <div className="">
-          <div>Section Name</div>
+          <div>System</div>
           <button>&times;</button>
         </div>
         <header>
@@ -43,40 +37,22 @@ export default function Settings() {
         <main>
           <div className="">
             <div>
-              <p>Tech stack</p>
+              <h4>Tech stack</h4>
               <div>
-                <div className="tech-entry">
-                  <ReactIcon />
-                  <span>React</span>
-                </div>
-                <div className="tech-entry">
-                  <SpringBootIcon />
-                  <span>Spring Boot</span>
-                </div>
-                <div className="tech-entry">
-                  <DotNetIcon />
-                  <span>.Net</span>
-                </div>
-                <div className="tech-entry">
-                  <LaravelIcon />
-                  <span>Laravel</span>
-                </div>
-                <div className="tech-entry">
-                  <MySqlIcon />
-                  <span>MySQL</span>
-                </div>
-                <div className="tech-entry">
-                  <OracleIcon />
-                  <span>Oracle DB</span>
-                </div>
-                <div className="tech-entry">
-                  <MongoIcon />
-                  <span>Mongo DB</span>
-                </div>
+                {techStackList.map((tech) => (
+                  <div className="tech-entry">
+                    {tech.icon}
+                    <span>{tech.name}</span>
+                  </div>
+                ))}
               </div>
             </div>
             <div>
-              <p>Projects</p>
+              <h4>Projects</h4>
+              <div>
+                <div>Data Integrator</div>
+                <div>Help Desk</div>
+              </div>
             </div>
           </div>
         </main>
