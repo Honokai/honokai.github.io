@@ -22,7 +22,13 @@ export default function AppDrawerContainer() {
       <div className="desktop">
         <div onClick={handleOpenState}></div>
       </div>
-      <div>app items</div>
+      <div className="footer">
+        <div className="applist-container">
+          <span>APP 1</span>
+          <span>APP 2</span>
+          <span>APP 3</span>
+        </div>
+      </div>
     </div>
   );
 }
