@@ -1,18 +1,8 @@
-import { DateTime, Duration } from "luxon";
+import { DateTime } from "luxon";
 import NotificationIcon from "../../src/assets/preferences-system-notifications-symbolic.svg?react";
 import { useCallback, useState } from "react";
 import Clock from "./Clock";
 import Calendar from "./calendar/Calendar";
-
-const weekDays = [
-  "sunday",
-  "monday",
-  "tuesday",
-  "wednesday",
-  "thursday",
-  "friday",
-  "saturday",
-];
 
 export default function CalendarClock() {
   const currentDate = DateTime.now();
