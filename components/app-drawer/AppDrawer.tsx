@@ -1,6 +1,7 @@
 import { useAppDrawer } from "../../hooks/useAppDrawer";
 import "../../src/css/app-drawer.css";
 import SearchIcon from "../../src/assets/search.svg?react";
+import firefoxIcon from "../../src/assets/firefox.png?react";
 
 export default function AppDrawerContainer() {
   const { open, handleOpenState } = useAppDrawer();
@@ -24,7 +25,10 @@ export default function AppDrawerContainer() {
       </div>
       <div className="footer">
         <div className="applist-container">
-          <span>APP 1</span>
+          <span>
+            <span className="tooltip">Firefox</span>
+            <img src={`${firefoxIcon}`} alt="" />
+          </span>
           <span>APP 2</span>
           <span>APP 3</span>
         </div>

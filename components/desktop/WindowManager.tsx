@@ -1,4 +1,4 @@
-import Settings from "../application/Settings";
+import Settings from "../application/settings/Settings";
 
 export default function WindowManager() {
   return (
