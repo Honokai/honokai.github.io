@@ -60,6 +60,10 @@
   margin-top: 0.5rem;
 }
 
+.sidebar > ul > li[data-active="true"] {
+  background: rgb(61, 61, 64);
+}
+
 .sidebar path {
   fill: white;
 }
@@ -101,6 +105,7 @@ ul {
   padding: 0.5rem;
   border-radius: 0.5rem;
   cursor: default;
+  margin: 3px 0px;
 }
 
 .sidebar li:hover {

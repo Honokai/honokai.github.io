@@ -213,3 +213,16 @@ section.notification {
   font-size: 1.2rem;
   font-weight: 600;
 }
+
+.working-days {
+  color: hsl(240, 3%, 94%);
+}
+.non-working-days {
+  color: hsl(240, 2%, 63%);
+}
+
+.calendar-month-selector button {
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+}

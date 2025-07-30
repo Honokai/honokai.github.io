@@ -27,11 +27,19 @@ export default function Settings() {
           </button>
         </header>
         <ul>
-          <li onClick={() => setConfigurationSection("Appearance")}>
+          <li
+            data-active={configurationSection === "Appearance"}
+            onClick={() => setConfigurationSection("Appearance")}
+          >
             <AppearanceIcon />
             <span>Appearance</span>
           </li>
-          <li onClick={() => setConfigurationSection("About Me")}>About me</li>
+          <li
+            data-active={configurationSection === "About Me"}
+            onClick={() => setConfigurationSection("About Me")}
+          >
+            About me
+          </li>
           <li>Projects</li>
         </ul>
       </section>
