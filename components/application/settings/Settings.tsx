@@ -3,7 +3,7 @@ import SearchIcon from "../../../src/assets/search.svg?react";
 import MenuIcon from "../../../src/assets/open-menu-symbolic.svg?react";
 import AppearanceIcon from "../../../src/assets/preferences-desktop-appearance-symbolic.svg?react";
 import AboutMe from "./AboutMe";
-import { Component, useEffect, useState } from "react";
+import { useState } from "react";
 import Appearance from "./Appearance";
 
 const configurationSections = ["Appearance", "About Me"] as const;
