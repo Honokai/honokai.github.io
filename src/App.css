@@ -11,4 +11,13 @@
 :root {
   font-family: "Noto Sans";
   font-weight: 300;
+  color-scheme: dark light;
+}
+
+.light {
+}
+
+.dark {
+  --primary: hsl(0, 0%, 99%);
+  --card-background: hsl(240, 4%, 21%);
 }

@@ -11,7 +11,7 @@ export default function AboutMe() {
         />
         <p className="title">Emerson Fernandes</p>
       </header>
-      <main>
+      <main className="about-me">
         <div className="">
           <div>
             <h4>Tech stack</h4>

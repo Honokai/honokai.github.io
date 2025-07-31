@@ -84,8 +84,11 @@
 }
 
 .appearance section {
-  padding: 1rem;
-  padding-left: 5rem;
+  padding: 1rem 1rem 0 5rem;
+}
+
+.appearance section > header {
+  margin-bottom: 0.5rem;
 }
 
 .main-content main {
@@ -139,7 +142,7 @@ li svg {
   gap: 1rem;
 }
 
-main > div > div {
+main.about-me > div > div {
   flex: 1;
   padding: 1rem;
 }
@@ -230,11 +233,6 @@ section ul {
   font-weight: bolder;
 }
 
-.section-title {
-  font-size: 1rem;
-  font-weight: bold;
-}
-
 .frame div section {
   display: flex;
 }
@@ -251,6 +249,7 @@ section ul {
 .flex {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   font-size: 0.8rem;
 }
@@ -319,4 +318,39 @@ section ul {
 
 .desktop-background.active {
   border: 3px solid hsl(213, 76%, 55%);
+}
+
+.card {
+  background: var(--card-background);
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+}
+
+.section-title {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.accent-circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  clip-path: circle();
+  border-radius: 50%;
+}
+
+section[title="Desktop background"] > header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.background-photo-preview {
+  height: 100px;
+  width: 150px;
+  border-radius: 0.5rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
 }

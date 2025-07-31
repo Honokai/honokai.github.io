@@ -15,8 +15,7 @@ export default function CalendarDay({
     day.weekday === 6 || day.weekday === 7 || day.month != displayedMonth;
 
   const classNames = [
-    "day",
-    isToday ? "today" : "",
+    isToday ? "today" : "day",
     !isCurrentMonth ? "is-other-month" : "",
     isWeekendOrNotInThisMonth ? "non-working-days" : "working-days",
   ]

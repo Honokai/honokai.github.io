@@ -1,8 +1,8 @@
 import { DateTime } from "luxon";
 import NotificationIcon from "../../src/assets/preferences-system-notifications-symbolic.svg?react";
 import { useCallback, useState } from "react";
-import Clock from "./Clock";
 import Calendar from "./calendar/Calendar";
+import { useTime } from "../../hooks/useTime";
 
 export default function CalendarClock() {
   const currentDate = DateTime.now();
@@ -41,4 +41,10 @@ function Notification(): React.ReactNode {
       <p>No Notifications</p>
     </section>
   );
+}
+
+function Clock() {
+  const { time } = useTime();
+
+  return <span>{time.toFormat("HH:mm")}</span>;
 }

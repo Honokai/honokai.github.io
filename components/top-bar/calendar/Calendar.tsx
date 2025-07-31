@@ -16,8 +16,6 @@ export default function Calendar() {
     setDisplayedDate((d) => d.plus({ months: 1 }));
   };
 
-  // Gera a grade de dias para o mês exibido.
-  // useMemo garante que a grade só seja recalculada quando o mês mudar.
   const calendarGrid = useMemo(
     () => buildCalendarGrid(displayedDate),
     [displayedDate]
