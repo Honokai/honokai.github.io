@@ -3,6 +3,7 @@ import "../../src/css/app-drawer.css";
 import SearchIcon from "../../src/assets/search.svg?react";
 import firefoxIcon from "../../src/assets/firefox.png";
 import { useAppSearch } from "../../hooks/useAppSearch";
+import { useEffect, useState } from "react";
 
 export default function AppDrawerContainer() {
   const { open, handleOpenState } = useAppDrawer();
@@ -58,6 +59,7 @@ function MainSection({ handleOpenState }: { handleOpenState: () => void }) {
         <div onClick={handleOpenState}></div>
       ) : (
         <section>
+          <div className="display-when-no-results">No results</div>
           {availableApps
             .filter((app) => app.name.startsWith(search.toLowerCase()))
             .map((match) => (
@@ -80,4 +82,4 @@ const availableApps = [
   { name: "videos" },
   { name: "disks" },
   { name: "settings" },
-];
+] as const;

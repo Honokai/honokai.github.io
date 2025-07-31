@@ -99,3 +99,21 @@ span.input-search > input {
 .tooltip:has(~ img:hover) {
   display: block;
 }
+
+.desktop > section:has(:not(span)) {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-when-no-results {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.display-when-no-results:has(~ span) {
+  display: none;
+}

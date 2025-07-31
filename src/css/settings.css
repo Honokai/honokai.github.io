@@ -320,12 +320,6 @@ section ul {
   border: 3px solid hsl(213, 76%, 55%);
 }
 
-.card {
-  background: var(--card-background);
-  border-radius: 0.6rem;
-  padding: 0.5rem;
-}
-
 .section-title {
   font-size: 0.9rem;
   font-weight: 400;

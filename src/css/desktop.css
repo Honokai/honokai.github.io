@@ -8,7 +8,6 @@
   flex-direction: column;
 }
 
-
 .d-none {
   display: none;
 }
@@ -58,4 +57,10 @@
 .tech {
   display: flex;
   /* flex-direction: column; */
+}
+
+.card {
+  background: var(--card-background);
+  border-radius: 0.6rem;
+  padding: 0.5rem;
 }

@@ -13,7 +13,7 @@ export default function AboutMe() {
       </header>
       <main className="about-me">
         <div className="">
-          <div>
+          <div className="card">
             <h4>Tech stack</h4>
             <div>
               {techStackList.map((tech) => (
