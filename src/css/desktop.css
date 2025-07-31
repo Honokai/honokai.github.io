@@ -64,3 +64,10 @@
   border-radius: 0.6rem;
   padding: 0.5rem;
 }
+
+.tag-construction {
+  position: absolute;
+  font-weight: 600;
+  bottom: 1rem;
+  right: 1rem;
+}

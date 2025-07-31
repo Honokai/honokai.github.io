@@ -3,7 +3,7 @@ import "../../src/css/app-drawer.css";
 import SearchIcon from "../../src/assets/search.svg?react";
 import firefoxIcon from "../../src/assets/firefox.png";
 import { useAppSearch } from "../../hooks/useAppSearch";
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 
 export default function AppDrawerContainer() {
   const { open, handleOpenState } = useAppDrawer();
@@ -34,12 +34,32 @@ export default function AppDrawerContainer() {
 
 function AppDrawerSearchHeader() {
   const { search, updateSearch } = useAppSearch();
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  const handleKeyDown = (ev: KeyboardEvent) => {
+    if (ev.key == "Escape") {
+      updateSearch("");
+      return;
+    }
+
+    inputRef.current?.focus();
+  };
+
+  useEffect(() => {
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      updateSearch("");
+    };
+  }, []);
 
   return (
     <div>
       <span className="input-search">
         <SearchIcon />
         <input
+          ref={inputRef}
           type="text"
           value={search}
           onChange={(e) => updateSearch(e.currentTarget.value)}
