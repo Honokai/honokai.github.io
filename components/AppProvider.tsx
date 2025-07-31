@@ -1,4 +1,5 @@
 import { AppDrawerProvider } from "../hooks/useAppDrawer";
+import { AppSearchContextProvider } from "../hooks/useAppSearch";
 import { TimeClockProvider } from "../hooks/useTime";
 
 export default function AppProvider({
@@ -8,7 +9,9 @@ export default function AppProvider({
 }) {
   return (
     <TimeClockProvider>
-      <AppDrawerProvider>{children}</AppDrawerProvider>
+      <AppDrawerProvider>
+        <AppSearchContextProvider>{children}</AppSearchContextProvider>
+      </AppDrawerProvider>
     </TimeClockProvider>
   );
 }

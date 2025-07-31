@@ -81,7 +81,7 @@
   padding: 1rem;
   padding-right: 0;
   border-radius: 1.5rem;
-  z-index: 2;
+  z-index: 4;
 }
 
 .calendar-in-evidence {
@@ -186,6 +186,7 @@ tbody td {
   width: 100vw;
   height: 100vh;
   display: block;
+  z-index: 3;
 }
 
 .today:hover {
